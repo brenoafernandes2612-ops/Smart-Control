@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Smart control</h1>
+
+    <h2>Registrar</h2>
+
+    <div><img src="../Smart-Control/assets/images/logo_halter.png" alt="ícone do perfil do usuario" height="100" width="100"></div>
+    
+    <form method="post">
+        <label for="text">Nome completo:</label>
+        <input type="text" name="text" id="text" placeholder="Digite seu nome completo..." required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu Email..." required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required minlength="8">
+
+        <label for="nivel_acesso">Nível de acesso:</label>
+        <select name="nivel_acesso" id="nivel_acesso">
+            <option value="">administrador</option>
+            <option value="">professor</option>
+            <option value="">Aluno</option>
+            <option value="">Recepção</option>
+        </select>
+
+        <label for="Termos_uso" >Aceite termos de uso</label>
+        <input type="checkbox" name="Termos_uso" id="Termos_uso" required>
+
+        <br>
+        <a href="http://127.0.0.1:5500/index.html">
+        <button type="submit">Registrar</button>
+        </a>
+        <br>
+
+    </form>
+    <footer>
+
+    <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Portal Pedro Landia</a>
+    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1786045091116!5m2!1spt-BR!2sbr!6m8!1m7!1sGPkj2i1MSa_HGa0GVXRiyw!2m2!1d-21.76029492397011!2d-43.33576496128647!3f124.29156697912771!4f12.41518984439331!5f0.7820865974627469" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    </footer>
+
+</body>
+</html>
