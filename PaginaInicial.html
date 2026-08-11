@@ -12,29 +12,32 @@
     <header class="cabeca">
     <img src="assets/images/logo_halter.png" alt="ícone do perfil do usuario" height="80" width="80">
     </header>
+
     <main class="main">
 
-        <h1>Smart control</h1>
+            <form action="post" class="form">
 
-        <form action="post" class="form"> 
+                <h1>Smart control</h1>
 
-            <img src="assets/images/img.perfil.png" alt="imagem perfil" height="90" width="90">
+                <img src="assets/images/img.perfil.png" alt="imagem perfil" height="90" width="90" class="perfil">
 
-            <label for="email" class="label">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu Email...">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email...">
 
-            <label for="password" class="label">Senha:</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha...">
+                <label for="password" class="label">Senha:</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha...">
 
-            <a href="AlterarSenha.html">Esqueceu a senha?</a>
+                <a href="AlterarSenha.html" class="senha">Esqueceu a senha?</a>
 
-            <a href="dashboard.html">Login</a>
+                <a href="dashboard.html">
+                    <button type="button" class="login">Login</button>
+                </a>
 
-            <a href="cadastro.html">
-            <button type="button">Registrar</button>
-            </a>
+                <a href="cadastro.html">
+                <button type="button" class="registrar">Registrar</button>
+                </a>
 
-        </form>
+            </form>
 
     </main>
 

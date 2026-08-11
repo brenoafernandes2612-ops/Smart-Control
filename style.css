@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,32 +6,87 @@
 }
 
 body{
+   background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
+   height: 100vh;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 17px;
 }
 
 .form{
-    background-color: rgb(143, 143, 143);
+    background-color: rgba(143, 143, 143, 0.863);
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 15px;
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     border-radius: 20px;
 }
 
-.label{
+.form h1{
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    margin: 10px;
+}
+
+.form img{
+    margin: 0 auto;
+}
+
+a{
+    margin: auto 0;
+}
+
+label{
+    display: block;
+    text-align: left;
     margin: 5px;
+    padding: 0;
+}
+
+input{
+    border-radius: 10px;
+    outline: none;
+    height: 35px;
+    border: none;
+}
+
+.login{
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 350px;
+    border-radius: 12px;
+}
+
+.registrar{
+    background-color: rgb(134, 0, 0);
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 350px;
+    border-radius: 12px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .footer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     margin: auto;
 }
