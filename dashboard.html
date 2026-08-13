@@ -4,56 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <nav>
-        <img src="assets/images/logo_halter.png" alt="ícone do perfil do usuario" height="100" width="100">
-        <ul>
-            <li><a href="">Relatórios</a></li>
-            <li><a href="">Configurações</a></li>
-            <li><a href="">Perfil</a></li>
-        </ul>
+    <nav class="cabecalho">
+        <h1>Smart Control</h1>
+        <img src="assets/images/logo_halter.png" alt="ícone do perfil do usuario" height="100" width="100" class="logo">
     </nav>
 
-    <h1>Relatório de acessos recentes</h1>
+    <aside class="barra_nav">
+        <ul>
+            <li><a href="">Ínicio</a></li>
+            <li><a href="">Perfil</a></li>
+            <li><a href="">Relatórios</a></li>
+            <li><a href="">Configurações</a></li>
+            <li><a href="">Fichas</a></li>
+        </ul>
+    </aside>
+    <div class="dashboard">
+        <main>
+            <div class="relatorio_card">
+                <h1>Relatório de acessos recentes</h1>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pedro</td>
+                            <td>09/08/2026</td>
+                            <td>09:20</td>
+                            <td>Falha</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas</td>
+                            <td>04/08/2026</td>
+                            <td>09:30</td>
+                            <td>Sucesso</td>
+                        </tr>
+                        <tr>
+                            <td>Hugo</td>
+                            <td>04/08/2026</td>
+                            <td>09:00</td>
+                            <td>Sucesso</td>
+                        </tr>
+                        <tr>
+                            <td>Davi</td>
+                            <td>04/08/2026</td>
+                            <td>08:45</td>
+                            <td>Falha</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Data</th>
-                <th>Hora</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Pedro</td>
-                <td>09/08/2026</td>
-                <td>09:20</td>
-                <td>Falha</td>
-            </tr>
-            <tr>
-                <td>Lucas</td>
-                <td>04/08/2026</td>
-                <td>09:30</td>
-                <td>Sucesso</td>
-            </tr>
-            <tr>
-                <td>Hugo</td>
-                <td>04/08/2026</td>
-                <td>09:00</td>
-                <td>Sucesso</td>
-            </tr>
-            <tr>
-                <td>Davi</td>
-                <td>04/08/2026</td>
-                <td>08:45</td>
-                <td>Falha</td>
-            </tr>
-        </tbody>
-    </table>
     <footer>
 
         <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Portal Pedro Landia</a>

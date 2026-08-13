@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
+    height: 100vh;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+
+.barra_nav{
+    background-color: rgba(51, 51, 51, 0.514);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.barra_nav a{
+    background: linear-gradient(to right, #3a3a3a, #bdbdbd);
+    text-decoration: none;
+    display: block;
+    padding: 13px 10px;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    color: #ddd;
+    border-radius: 7px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+aside{
+    position: absolute;
+    width: 225px;
+    height: 330px;
+    padding: 32px 24px;
+    background: rgba(40, 40, 40, 0.25);
+    border-radius: 10px;
+    border: 2px solid #191919;
+    margin: 50px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-bottom: 12px;
+}
+
+.dashboard{
+    margin-left: 200px;
+}
+
+.relatorio_card{
+    background-color: #333;
+    width: 80%;
+    height: 370px;
+    margin: 120px auto;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.relatorio_card h1{
+    color: white;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+thead{
+    background-color: #ff3038;
+}
+
+th{
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+td{
+    padding: 14px;
+    text-align: center;
+    color: white;
+    background-color: #3d3d3d;
+    border: 1px solid #505050;
+}
+
+footer{
+    display: flex;
+    justify-content: right;
+    margin: 30px;
+    font-size: 18px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
