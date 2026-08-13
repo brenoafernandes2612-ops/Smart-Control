@@ -11,6 +11,7 @@ body{
 
 .cabecalho{
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
@@ -33,6 +34,7 @@ body{
     background: linear-gradient(to right, #3a3a3a, #bdbdbd);
     text-decoration: none;
     display: block;
+    position: relative;
     padding: 13px 10px;
     width: 180px;
     text-align: center;
