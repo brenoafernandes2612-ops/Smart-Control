@@ -121,10 +121,14 @@ a{
     color: white;
 }
 
+.footer a:hover{
+    text-decoration: underline;
+}
+
 @media (max-width: 768px){
-    body{
+    /* body{
         min-height: 100vh;
-    }
+    } */
     .logo{
         width: 60px;
         height: 60px;
@@ -144,7 +148,7 @@ a{
         min-height: 0;
         padding: 20px;
         border-radius: 20px;
-        margin: 100px auto;
+        margin: 30px auto;
     }
 
     .form h1{
@@ -188,13 +192,14 @@ a{
     }
 }
 
-@media (max-width: 380px){
+/* @media (max-width: 380px){
     main{
         padding: 10px;
     }
 
     .form{
         padding: 15px;
+        margin: 100px auto;
     }
 
     .form h1{
@@ -205,4 +210,4 @@ a{
         width: 65px;
         height: 65px;
     }
-}
+} */
