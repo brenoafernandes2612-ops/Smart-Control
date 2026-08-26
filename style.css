@@ -6,9 +6,11 @@
 }
 
 body{
-   background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
-   min-height: 100vh;
-   font-family: "Inter", sans-serif;
+    background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
 }
 
 .logo{
@@ -30,7 +32,7 @@ main{
     display: flex;
     flex-direction: column;
     padding: 15px;
-    width: 400px;
+    width: min(400px, 100%);
     height: 500px;
     border-radius: 20px;
     position: relative;
@@ -96,6 +98,7 @@ input{
     height: 45px;
     width: 100%;
     border-radius: 12px;
+    text-decoration: none;
 }
 
 .registrar:hover{
@@ -120,8 +123,7 @@ a{
 
 @media (max-width: 768px){
     body{
-        min-height: 97.9vh;
-        max-width: 100vh;
+        min-height: 100vh;
     }
     .logo{
         width: 60px;
@@ -136,13 +138,13 @@ a{
     }
 
     .form{
-        max-width: 350px;
+        max-width: 400px;
         width: 100%;
         height: auto;
-        min-height: 500px;
+        min-height: 0;
         padding: 20px;
         border-radius: 20px;
-        /* transform: scale(0.9); */
+        margin: 100px auto;
     }
 
     .form h1{
@@ -163,7 +165,7 @@ a{
 
     input{
         width: 100%;
-        height: 25px;
+        height: 30px;
         font-size: 15px;
         margin: 0;
     }
@@ -176,12 +178,31 @@ a{
     .login{
         width: 100%;
         font-size: 15px;
-        margin: 0;
+        margin: 10px 0;
     }
 
     .registrar{
         width: 100%;
         font-size: 15px;
-        margin: 0;
+        margin: 10px 0 20px;
+    }
+}
+
+@media (max-width: 380px){
+    main{
+        padding: 10px;
+    }
+
+    .form{
+        padding: 15px;
+    }
+
+    .form h1{
+        font-size: 22px;
+    }
+
+    .perfil{
+        width: 65px;
+        height: 65px;
     }
 }
