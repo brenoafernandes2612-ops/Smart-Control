@@ -1,47 +1,59 @@
-const elementoNome = document.querySelector("#nomeCompleto");
-const elementoData = document.querySelector("#dataAtual");
+const areaBoasVindas = document.querySelector("#boas-vindas");
+const botaoMenu = document.querySelector(".menu-toggle");
+const menuNavegacao = document.querySelector("#menu-navegacao");
 
-if (elementoNome && elementoData) {
+if (botaoMenu && menuNavegacao) {
+    botaoMenu.addEventListener("click", () => {
+        const menuAberto = menuNavegacao.classList.toggle("menu-aberto");
+        botaoMenu.setAttribute("aria-expanded", String(menuAberto));
+        botaoMenu.setAttribute("aria-label", menuAberto ? "Fechar menu" : "Abrir menu");
+    });
+}
 
-    const nome = prompt("Digite seu nome:");
-    const sobrenome = prompt("Digite seu sobrenome:");
+if (areaBoasVindas) {
 
-    const usuario = `${nome} ${sobrenome}`;
+    // Nome e sobrenome
+    let nome = prompt("Digite seu nome:");
+    let sobrenome = prompt("Digite seu sobrenome:");
 
-    const diasSemana = [
+    // Caso o usuário não digite nada
+    if (!nome || nome.trim() === "") {
+        nome = "Usuário";
+    }
+
+    if (!sobrenome || sobrenome.trim() === "") {
+        sobrenome = "";
+    }
+
+    const usuario = `${nome} ${sobrenome}`.trim();
+
+    // Dias da semana
+    const dias = [
         "Domingo",
-        "Segunda-Feira",
-        "Terça-Feira",
-        "Quarta-Feira",
-        "Quinta-Feira",
-        "Sexta-Feira",
+        "Segunda-feira",
+        "Terça-feira",
+        "Quarta-feira",
+        "Quinta-feira",
+        "Sexta-feira",
         "Sábado"
     ];
 
+    // Função para atualizar a saudação
     function atualizarSaudacao() {
-
         const agora = new Date();
-
-        const diaSemana = diasSemana[agora.getDay()];
-
+        const diaSemana = dias[agora.getDay()];
         const dia = String(agora.getDate()).padStart(2, "0");
         const mes = String(agora.getMonth() + 1).padStart(2, "0");
         const ano = agora.getFullYear();
-
         const hora = String(agora.getHours()).padStart(2, "0");
         const minuto = String(agora.getMinutes()).padStart(2, "0");
         const segundo = String(agora.getSeconds()).padStart(2, "0");
 
-        const dataAtual =
-            `${diaSemana}, ${dia}/${mes}/${ano} – ${hora}:${minuto}:${segundo}`;
-
-        elementoNome.textContent = `Olá, ${usuario}!`;
-        elementoData.textContent = `Hoje é ${dataAtual}`;
-
-        console.log(dataAtual);
+        areaBoasVindas.innerHTML = `
+            <p>Olá, ${usuario}! Hoje é ${diaSemana}, ${dia}/${mes}/${ano} - ${hora}:${minuto}:${segundo}</p>
+        `;
     }
-
-    // Executa imediatamente
+    
     atualizarSaudacao();
 
     // Atualiza a cada 1 segundo
