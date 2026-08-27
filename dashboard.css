@@ -183,6 +183,7 @@ footer a{
         background: #777;
         cursor: pointer;
         order: 999;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     .menu-toggle img{
@@ -196,7 +197,6 @@ footer a{
         position: absolute;
         z-index: 10;
         top: 80px;
-        left: 15px;
         right: 15px;
         width: auto;
         height: auto;
