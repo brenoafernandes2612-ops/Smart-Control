@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif
+}
+
+.cabeca{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin: 5px;
+}
+
+.logo{
+    border-radius: 50%;
+    margin: 5px 15px;
+    height: 75px;
+    width: 75px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.titulo_form{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 28px;
+}
+
+.formulario{
+    background-color: rgba(143, 143, 143, 0.863);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: min(400px, 100%);
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formulario h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 28px;
+}
+
+a{
+    margin: auto 0;
+}
+
+.label{
+    display: block;
+    text-align: left;
+    margin: 20px 0px 2px;
+    padding: 0;
+}
+
+.input{
+    border-radius: 10px;
+    outline: none;
+    height: 35px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-input{
+    margin: 23px 5px 20px;
+    width: 15px;
+    height: 15px;
+}
+
+.botao{
+    background-color: rgb(134, 0, 0);
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.mapa{
+    height: 250px;
+    width: 350px;
+    margin: 10px;
+}
+
+@media (max-width: 768px){
+    .cabeca{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 20px;
+        font-size: 30px;
+    }
+
+    .logo{
+        order: -1;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 28px;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .mapa{
+        height: 200px;
+        width: 300px;
+        margin: 0px;
+        display: flex;
+        margin: auto;
+    }
+}
