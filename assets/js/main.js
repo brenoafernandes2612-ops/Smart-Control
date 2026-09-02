@@ -53,9 +53,41 @@ if (areaBoasVindas) {
             <p>Olá, ${usuario}! Hoje é ${diaSemana}, ${dia}/${mes}/${ano} - ${hora}:${minuto}:${segundo}</p>
         `;
     }
-    
+
     atualizarSaudacao();
 
     // Atualiza a cada 1 segundo
     setInterval(atualizarSaudacao, 1000);
+}
+
+// CAMPO BUSCA
+
+const campoBusca = document.querySelector("#campoBusca");
+
+const linhasTabela = document.querySelectorAll(".relatorio_card tbody tr");
+
+if (campoBusca) {
+
+    campoBusca.addEventListener("input", function () {
+
+        const textoBusca = campoBusca.value.toLowerCase();
+
+        linhasTabela.forEach(function (linha) {
+
+            const nome = linha.children[0].textContent.toLowerCase();
+
+            if (nome.includes(textoBusca)) {
+
+                linha.classList.remove("linha-escondida");
+
+            } else {
+
+                linha.classList.add("linha-escondida");
+
+            }
+
+        });
+
+    });
+
 }

@@ -13,11 +13,12 @@ body{
 }
 
 .cabecalho{
+    background-color: rgb(199, 0, 0);
     display: flex;
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
+    padding: 20px 30px;
     font-size: 30px;
 }
 
@@ -68,6 +69,29 @@ aside{
     margin: 50px 0;
 }
 
+.campoBusca {
+    margin: 50px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.campoBusca label{
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.campoBusca input{
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
 ul{
     list-style: none;
 }
@@ -77,14 +101,16 @@ li{
 }
 
 .dashboard{
-    margin-left: 200px;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 300px);
 }
 
 .relatorio_card{
     background-color: #333;
-    width: 80%;
     min-height: 370px;
-    margin: 200px auto;
+    margin: 10px 20px 20px 0;
     padding: 15px;
     border-radius: 20px;
     display: flex;
@@ -97,7 +123,7 @@ li{
 
 .relatorio_card h1{
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 table{
@@ -151,6 +177,10 @@ footer a{
     font-size: 18px;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.linha-escondida {
+  display: none;
 }
 
 @media (max-width: 768px){
@@ -222,11 +252,13 @@ footer a{
     
     .dashboard{
         margin-left: 0;
+        width: 100%;
+        padding: 15px;
     }
 
     .relatorio_card{
-        width: calc(100% - 30px);
-        margin: 100px auto 30px;
+        width: 100%;
+        margin: 0;
         overflow-x: auto;
     }
 
