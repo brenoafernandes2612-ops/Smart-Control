@@ -8,7 +8,7 @@
 
 body {
     background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Inter", sans-serif;
 }
 
@@ -259,7 +259,7 @@ tbody tr:hover td {
 footer {
     display: flex;
     justify-content: flex-end;
-    margin: 30px;
+    margin: 50px;
     font-size: 18px;
 }
 
@@ -268,6 +268,9 @@ footer a {
     color: white;
 }
 
+footer a:hover{
+    text-decoration: underline;
+}
 
     /* BOAS-VINDAS */
 
