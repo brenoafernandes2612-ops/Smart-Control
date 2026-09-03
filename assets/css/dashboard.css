@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+
+    /* CABEÇALHO */
+
+
+.cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: rgb(199, 0, 0);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+    /* BARRA DE NAVEGAÇÃO */
+
+
+.barra_nav {
+    display: flex;
+    align-items: center;
+}
+
+.barra_nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.barra_nav li {
+    margin: 0;
+}
+
+.barra_nav a {
+    background: #2b2b2b;
+    color: #fff;
+    border: 1px solid #555;
+    text-decoration: none;
+    display: block;
+    padding: 10px 14px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.barra_nav a:hover {
+    background: #c70000;
+    border-color: #ff3b3b;
+}
+
+#botaoTema{
+    background: #2b2b2b;
+    color: white;
+    border: 1px solid #555;
+    display: block;
+    padding: 10px 14px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+#botaoTema:hover{
+    background: #c70000;
+    border-color: #ff3b3b;
+}
+
+
+    /* CARDS */
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 50px;
+}
+
+.card {
+    background: #333333;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #1b1b1b;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ff2d2d;
+    margin-bottom: 10px;
+}
+
+.card span {
+    color: #aaaaaa;
+}
+
+
+    /* CAMPO DE BUSCA */
+
+
+.campoBusca {
+    margin: 50px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.campoBusca label {
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.campoBusca input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+
+    /* LISTAS */
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+.barra_nav li {
+    margin: 0;
+}
+
+
+    /* DASHBOARD */
+
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+
+
+    /* RELATÓRIO */
+
+
+.relatorio_card {
+    background-color: #333;
+    min-height: 370px;
+    max-width: 100%;
+    margin: 10px 0 0;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.relatorio_card h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+    /* TABELA */
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+thead {
+    background-color: #ff3038;
+}
+
+th {
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    color: white;
+    background-color: #3d3d3d;
+    border: 1px solid #505050;
+}
+
+tbody tr:hover td {
+    background-color: #505050;
+    cursor: pointer;
+}
+
+
+    /* FOOTER */
+
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+    font-size: 18px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+    /* BOAS-VINDAS */
+
+
+#boas-vindas {
+    background: linear-gradient(90deg, #b30000, #ff2d2d);
+    color: white;
+    padding: 15px 25px;
+    margin: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+    /* OUTROS */
+
+
+.linha-escondida {
+    display: none;
+}
+
+
+    /* DARK MODE */
+
+
+body.dark-theme {
+    background: #121212;
+    color: white;
+}
+
+body.dark-theme .cabeca {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .card {
+    background-color: #222;
+    border-color: #444;
+}
+
+body.dark-theme .relatorio_card {
+    background-color: #222;
+}
+
+body.dark-theme td {
+    background-color: #292929;
+    border-color: #444;
+}
+
+body.dark-theme .barra_nav {
+    background-color: #222;
+}
+
+body.dark-theme .barra_nav a {
+    background: #333;
+}
+
+body.dark-theme .barra_nav a:hover {
+    background: #ff2d2d;
+}
+
+body.dark-theme #botaoTema {
+    background: #444;
+    color: white;
+}
+
+body.dark-theme .campoBusca input {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-theme .campoBusca input::placeholder {
+    color: #aaa;
+}
+
+body.dark-theme #boas-vindas {
+    background: linear-gradient(90deg, #800000, #b30000);
+}
+
+body.dark-theme footer a {
+    color: #ddd;
+}
+
+
+   /* RESPONSIVIDADE */
+
+
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+
+    .cabeca {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .cabecalho {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalho h1 {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        order: -1;
+        margin-right: 10px;
+    }
+
+    /* BOTÃO DO MENU */
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        padding: 8px;
+        border: 1px solid #333;
+        border-radius: 7px;
+        background: #777;
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 150;
+        box-shadow:
+            rgba(0, 0, 0, 0.25) 0px 10px 20px;
+    }
+
+    .menu-toggle img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* MENU FECHADO */
+
+    .barra_nav {
+        display: none;
+        position: absolute;
+        top: 85px;
+        right: 15px;
+        width: 250px;
+        padding: 15px;
+        background-color: #333;
+        border-radius: 12px;
+        z-index: 100;
+    }
+
+    /* MENU ABERTO */
+
+    .barra_nav.menu-aberto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* LISTA DO MENU */
+
+    .barra_nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .barra_nav li {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* LINKS */
+
+    .barra_nav a {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* BOTÃO DARK MODE */
+
+    #botaoTema {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* DASHBOARD */
+
+    .dashboard {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* CAMPO DE BUSCA */
+
+    .campoBusca {
+        margin: 30px 0 15px;
+        width: 100%;
+    }
+
+    .campoBusca input {
+        max-width: none;
+    }
+
+    /* RELATÓRIO */
+
+    .relatorio_card {
+        width: 100%;
+        margin: 0;
+        overflow-x: auto;
+    }
+}

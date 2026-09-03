@@ -1,92 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
-<body>
-    <nav class="cabecalho">
-        <h1>Smart Control</h1>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-navegacao" aria-label="Abrir menu">
-            <img src="assets/images/icone_menu.png" alt="">
-        </button>
-        <p id="nomeCompleto"></p>
-        <p id="dataAtual"></p>
-        <img src="assets/images/logo_halter.png" alt="Ícone do perfil do usuário" height="100" width="100" class="logo">
-    </nav>
 
-    <aside class="barra_nav" id="menu-navegacao">
+<body>
+
+    <header class="cabeca">
+
+        <nav class="cabecalho">
+
+            <img src="assets/images/logo_halter.png" alt="Ícone do perfil do usuário" height="100" width="100"
+                class="logo">
+
+            <h1>Smart Control</h1>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-navegacao"
+                aria-label="Abrir menu">
+                <img src="assets/images/icone_menu.png" alt="">
+            </button>
+
+            <p id="nomeCompleto"></p>
+            <p id="dataAtual"></p>
+
+        </nav>
+
+        <aside class="barra_nav" id="menu-navegacao">
         <ul>
             <li><a href="">Início</a></li>
             <li><a href="">Perfil</a></li>
             <li><a href="">Relatórios</a></li>
             <li><a href="">Configurações</a></li>
             <li><a href="">Fichas</a></li>
+            <li>
+                <button id="botaoTema" type="button">
+                        <i class="fa-light fa-moon"></i>
+                        Dark Mode
+                </button>
+            </li>
         </ul>
-    </aside>
+        
+        </aside>
+
+    </header>
 
     <main>
 
         <section id="boas-vindas"></section>
-        
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Progressão de Carga</h3>
+                <p class="numCard">22%</p>
+                <span>últimos três meses</span>
+            </div>
+
+            <div class="card">
+                <h3>Frequência Mensal</h3>
+                <p class="numCard">90%</p>
+                <span>últimos três meses</span>
+            </div>
+
+            <div class="card">
+                <h3>Percentual de Massa</h3>
+                <p class="numCard">50%</p>
+                <span>últimos três meses</span>
+            </div>
+
+            <div class="card">
+                <h3>Percentual de Gordura</h3>
+                <p class="numCard">10%</p>
+                <span>últimos três meses</span>
+            </div>
+
+            <div class="card">
+                <h3>Tempo de Treino</h3>
+                <p>757 min</p>
+                <span>Tempo total</span>
+            </div>
+
+
+        </section>
+
         <div class="dashboard">
 
             <div class="campoBusca">
                 <label for="campoBusca">Pesquisar:</label>
                 <input type="text" id="campoBusca" placeholder="Buscar...">
             </div>
-            
-                <div class="relatorio_card">
-                    <h1>Relatório de acessos recentes</h1>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Data</th>
-                                <th>Hora</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Pedro</td>
-                                <td>09/08/2026</td>
-                                <td>09:20</td>
-                                <td>Falha</td>
-                            </tr>
-                            <tr>
-                                <td>Lucas</td>
-                                <td>04/08/2026</td>
-                                <td>09:30</td>
-                                <td>Sucesso</td>
-                            </tr>
-                            <tr>
-                                <td>Hugo</td>
-                                <td>04/08/2026</td>
-                                <td>09:00</td>
-                                <td>Sucesso</td>
-                            </tr>
-                            <tr>
-                                <td>Davi</td>
-                                <td>04/08/2026</td>
-                                <td>08:45</td>
-                                <td>Falha</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+            <div class="relatorio_card">
+                <h1>Relatório de acessos recentes</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pedro</td>
+                            <td>09/08/2026</td>
+                            <td>09:20</td>
+                            <td>Falha</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas</td>
+                            <td>04/08/2026</td>
+                            <td>09:30</td>
+                            <td>Sucesso</td>
+                        </tr>
+                        <tr>
+                            <td>Hugo</td>
+                            <td>04/08/2026</td>
+                            <td>09:00</td>
+                            <td>Sucesso</td>
+                        </tr>
+                        <tr>
+                            <td>Davi</td>
+                            <td>04/08/2026</td>
+                            <td>08:45</td>
+                            <td>Falha</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 
     <footer>
 
         <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Portal Pedro Landia</a>
-    
+
     </footer>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
