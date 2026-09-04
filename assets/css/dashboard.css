@@ -8,6 +8,8 @@
 
 body {
     background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
+    margin: 0;
+    padding-top: 80px;
     min-height: 100vh;
     font-family: "Inter", sans-serif;
 }
@@ -20,7 +22,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 16px 20px;
     background-color: rgb(199, 0, 0);
 }
 
@@ -32,8 +39,8 @@ body {
 
 .logo {
     border-radius: 50%;
-    height: 75px;
-    width: 75px;
+    height: 55px;
+    width: 55px;
 }
 
 .menu-toggle {

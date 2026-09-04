@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #ff2d2d, #1f1f1f);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    border-radius: 50%;
+    margin: 10px;
+    height: 75px;
+    width: 75px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.formulario{
+    background-color: rgba(143, 143, 143, 0.863);
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 450px;
+    width: min(350px, 100%);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form-title{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 28px;
+}
+
+.label{
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.input{
+    border-radius: 10px;
+    outline: none;
+    height: 35px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.botao{
+    background-color:  rgb(29, 29, 29);
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.botao:hover{
+    transition: 0.5s;
+    background-color: rgb(48, 48, 48);
+}
+
+.footer{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
