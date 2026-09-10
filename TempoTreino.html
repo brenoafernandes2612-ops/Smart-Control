@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percentual de Gordura</title>
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
+
 <body>
-    
+
     <header class="cabeca">
 
         <nav class="cabecalho">
@@ -28,115 +30,100 @@
         </nav>
 
         <aside class="barra_nav" id="menu-navegacao">
-        <ul>
-            <li><a href="dashboard.html">Início</a></li>
-            <li><a href="ProgressaoCarga.html">Progressão de Carga</a></li>
-            <li><a href="FrequenciaMensal.html">Frequência Mensal</a></li>
-            <li><a href="PercentualMassa.html">Percentual de Massa</a></li>
-            <li><a href="PercentualGordura.html">Percentual de Gordura</a></li>
-            <li><a href="TempoTreino.html">Tempo de Treino</a></li>
-            <li>
-                <button id="botaoTema" type="button">
+            <ul>
+                <li><a href="dashboard.html">Início</a></li>
+                <li><a href="ProgressaoCarga.html">Progressão de Carga</a></li>
+                <li><a href="FrequenciaMensal.html">Frequência Mensal</a></li>
+                <li><a href="PercentualMassa.html">Percentual de Massa</a></li>
+                <li><a href="PercentualGordura.html">Percentual de Gordura</a></li>
+                <li><a href="TempoTreino.html">Tempo de Treino</a></li>
+                <li>
+                    <button id="botaoTema" type="button">
                         <i class="fa-light fa-moon"></i>
                         Dark Mode
-                </button>
-            </li>
-        </ul>
-        
+                    </button>
+                </li>
+            </ul>
+
         </aside>
 
     </header>
 
     <main>
-
         <section id="boas-vindas"></section>
 
+        <h2 class="subtitulo">Análise de Tempo de Treino</h2>
         <section class="cards">
 
             <div class="card">
-                <h3>Progressão de Carga</h3>
-                <p class="numCard">22%</p>
-                <span>últimos três meses</span>
+                <h3>Média Diária</h3>
+                <p class="numCard">65 min</p>
+                <span>Por treino</span>
             </div>
 
             <div class="card">
-                <h3>Frequência Mensal</h3>
-                <p class="numCard">90%</p>
-                <span>últimos três meses</span>
+                <h3>Tempo na Semana</h3>
+                <p class="numCard">325 min</p>
+                <span>Total acumulado</span>
             </div>
 
             <div class="card">
-                <h3>Percentual de Massa</h3>
-                <p class="numCard">50%</p>
-                <span>últimos três meses</span>
+                <h3>Treino mais Longo</h3>
+                <p class="numCard">90 min</p>
+                <span>Pernas</span>
             </div>
-
-            <div class="card">
-                <h3>Percentual de Gordura</h3>
-                <p class="numCard">10%</p>
-                <span>últimos três meses</span>
-            </div>
-
-            <div class="card">
-                <h3>Tempo de Treino</h3>
-                <p>757 min</p>
-                <span>Tempo total</span>
-            </div>
-
 
         </section>
 
         <div class="dashboard">
 
-            <div class="campoBusca">
-                <label for="campoBusca">Pesquisar:</label>
-                <input type="text" id="campoBusca" placeholder="Buscar...">
-            </div>
-
             <div class="relatorio_card">
-                <h1>Relatório de acessos recentes</h1>
+                <h1>Duração dos Últimos Treinos</h1>
                 <table>
                     <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Data</th>
-                            <th>Hora</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Pedro</td>
-                            <td>09/08/2026</td>
-                            <td>09:20</td>
-                            <td>Falha</td>
-                        </tr>
-                        <tr>
-                            <td>Lucas</td>
-                            <td>04/08/2026</td>
-                            <td>09:30</td>
-                            <td>Sucesso</td>
-                        </tr>
-                        <tr>
-                            <td>Hugo</td>
-                            <td>04/08/2026</td>
-                            <td>09:00</td>
-                            <td>Sucesso</td>
-                        </tr>
-                        <tr>
-                            <td>Davi</td>
-                            <td>04/08/2026</td>
-                            <td>08:45</td>
-                            <td>Falha</td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <th>Data</th>
+                        <th>Treino</th>
+                        <th>Horário de Início</th>
+                        <th>Duração Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>03/09/2026</td>
+                        <td>Peito e Tríceps</td>
+                        <td>18:30</td>
+                        <td>65 min</td>
+                    </tr>
+                    <tr>
+                        <td>02/09/2026</td>
+                        <td>Costas e Bíceps</td>
+                        <td>19:00</td>
+                        <td>70 min</td>
+                    </tr>
+                    <tr>
+                        <td>31/08/2026</td>
+                        <td>Pernas e Ombro</td>
+                        <td>18:15</td>
+                        <td>90 min</td>
+                    </tr>
+                </tbody>
                 </table>
             </div>
         </div>
 
     </main>
 
+    <footer>
+
+        <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Portal Pedro Landia</a>
+
+    </footer>
+
     <script src="assets/js/tema.js"></script>
+    <script src="assets/js/main.js"></script>
+
 
 </body>
+
 </html>
